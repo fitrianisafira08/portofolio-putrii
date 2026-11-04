@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Putri Safira</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fbff;
+            color: #14264b;
+        }
+
+        /* NAVBAR */
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px #00000010;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #2878d0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #14264b;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2878d0;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 520px;
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(120deg, #e7f1ff, #f8fbff);
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h3 {
+            color: #2878d0;
+            font-size: 22px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin: 12px 0;
+        }
+
+        .hero-text h1 span {
+            color: #2878d0;
+        }
+
+        .hero-text p {
+            line-height: 1.8;
+            color: #5d6b85;
+        }
+
+        .hero img {
+            width: 270px;
+            height: 320px;
+            object-fit: cover;
+            border: 8px solid white;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px #00000020;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 23px;
+            background: #17477f;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .btn:hover {
+            background: #2878d0;
+        }
+
+        /* SECTION */
+        section {
+            padding: 75px 10%;
+        }
+
+        .judul {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .judul span {
+            color: #2878d0;
+        }
+
+        /* ABOUT */
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.9;
+            color: #5d6b85;
+        }
+
+        /* SKILLS */
+        .skills {
+            background: #edf5ff;
+        }
+
+        .skill-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px #00000010;
+        }
+
+        .skill-card h3 {
+            color: #2878d0;
+            margin-bottom: 10px;
+        }
+
+        /* PROJECT */
+        .project-card {
+            max-width: 650px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px #00000012;
+        }
+
+        .project-card h3 {
+            color: #2878d0;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #5d6b85;
+            line-height: 1.8;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #eaf3ff;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        footer {
+            background: #14264b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 55px 7%;
+            }
+
+            .hero-text h1 {
+                font-size: 35px;
+            }
+
+            .skill-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero img {
+                width: 220px;
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">&lt;/&gt; Putri Fitriani Safira</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+
+            <h1>Putri Fitriani <span>Safira</span></h1>
+
+            <h2>Web Developer & Student</h2>
+
+            <p>
+                Saya seorang pelajar di SMKN 1 Kawali,
+                dengan minat besar di bidang pengembangan
+                web dan teknologi.
+            </p>
+
+            
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+        </div>
+
+        <img src="foto-putri.jpg" alt="Foto Putri">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2 class="judul">About <span>Me</span></h2>
+
+        <div class="about">
+            <p>
+                Halo! Saya Putri Fitriani Safira,
+                seorang pelajar di SMKN 1 Kawali jurusan
+                PPLG (Pengembangan Perangkat Lunak dan Gim).
+                Saya memiliki ketertarikan dalam dunia
+                pemrograman, desain, dan teknologi serta
+                selalu berusaha belajar hal baru.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2 class="judul">My <span>Skills</span></h2>
+
+        <div class="skill-container">
+
+            <div class="skill-card">
+                <h3>Laravel</h3>
+                <p>Framework PHP</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>PHP</h3>
+                <p>Backend Development</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Web Development</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Figma</h3>
+                <p>UI/UX Design</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="projects">
+
+        <h2 class="judul">My <span>Projects</span></h2>
+
+        <div class="project-card">
+            <h3>📚 Web Perpus</h3>
+
+            <p>
+                Website perpustakaan untuk mengelola
+                data buku, anggota, dan peminjaman.
+                Proyek ini dibuat sebagai bagian dari
+                pembelajaran pengembangan website.
+            </p>
+
+            <br>
+
+            <span>HTML | PHP | MySQL</span>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="judul">Contact <span>Me</span></h2>
+
+        <p>Terima kasih sudah mengunjungi website portofolio saya.</p>
+
+        <p>Email: putriitrianisafira@gamil.com</p>
+
+        <a href="mailto:putrifitrianisafira@gmail.com" class="btn">
+            Send Message
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Putri Fitriani Safira | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
